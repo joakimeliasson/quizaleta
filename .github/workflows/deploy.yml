@@ -94,6 +94,8 @@ jobs:
 
       - name: 🛠 Setup Database
         run: npx prisma migrate reset --force
+        env:
+          DATABASE_URL: ${{ vars.DATABASE_URL }}
 
       - name: ⚙️ Build
         run: npm run build
@@ -132,4 +134,3 @@ jobs:
         run: flyctl deploy --remote-only --build-arg COMMIT_SHA=${{ github.sha }} --app ${{ steps.app_name.outputs.value }}
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
-          DATABASE_URL: ${{ vars.DATABASE_URL }}
