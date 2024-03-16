@@ -104,9 +104,10 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           start: npm run start:mocks
-          wait-on: http://localhost:3000
+          wait-on: http://localhost:8811
         env:
-          PORT: 3000
+          PORT: 8811
+          SESSION_SECRET: ${{ secrets.SESSION_SECRET }}
 
   deploy:
     name: 🚀 Deploy
