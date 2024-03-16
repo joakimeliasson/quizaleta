@@ -1,4 +1,5 @@
-app = "quizaleta-18b5"
+app = "quizaleta"
+primary_region = "arn"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = [ ]
