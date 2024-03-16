@@ -1,5 +1,5 @@
 {
-  "name": "quizaleta-18b5",
+  "name": "quizaleta",
   "private": true,
   "sideEffects": false,
   "scripts": {
@@ -43,7 +43,7 @@
     "@testing-library/jest-dom": "^6.1.4",
     "@types/bcryptjs": "^2.4.5",
     "@types/eslint": "^8.44.6",
-    "@types/node": "^18.18.6",
+    "@types/node": "^20.11.28",
     "@types/react": "^18.2.31",
     "@types/react-dom": "^18.2.14",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
@@ -76,7 +76,7 @@
     "prisma": "^4.16.2",
     "start-server-and-test": "^2.0.1",
     "tailwindcss": "^3.3.3",
-    "ts-node": "^10.9.1",
+    "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.2.2",
     "vite": "^4.5.0",
@@ -84,7 +84,7 @@
     "vitest": "^0.34.6"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0"
   },
   "prisma": {
     "seed": "ts-node -r tsconfig-paths/register prisma/seed.ts"
